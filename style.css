@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #f4f1ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main card */
+.container {
+  width: 420px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* buttons */
+button {
+  padding: 9px 14px;
+  margin: 6px 4px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffd966;
+  color: #333;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* todo list */
+ul {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* sticky notes */
+li {
+  list-style: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+/* different post-it colors */
+li:nth-child(4n+1) { background: #fff3a3; }
+li:nth-child(4n+2) { background: #ffcccb; }
+li:nth-child(4n+3) { background: #c1f0c1; }
+li:nth-child(4n+4) { background: #cfe2ff; }
+
+/* delete button */
+li button {
+  background: rgba(0,0,0,0.08);
+  padding: 4px 8px;
+  font-size: 12px;
+}
